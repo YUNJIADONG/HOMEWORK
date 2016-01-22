@@ -1,7 +1,9 @@
 ##0####
 firstName<-"YUNJIA"
+print(firstName)
 ###This shows that my first name is YUNJIA.
 lastName<-"Dong"
+print(lastName)
 ###This shows that my last name is Dong
 print(paste(firstName,lastName))
 ###This shows that my full name is YUNJIA Dong
