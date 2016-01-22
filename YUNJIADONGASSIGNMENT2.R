@@ -10,7 +10,7 @@ YunjiaDongAssignment2<-list(
 ##1##
 install.packages("repmis")
 library("repmis")
-Diamonds <- source_data("https://raw.githubusercontent.com/EconomiCurtis/econ294_2015/master/data/diamonds.CSV")
+Diamonds <- source_data("https://raw.githubusercontent.com/EconomiCurtis/econ294_2015/master/data/diamonds.CSV",header=T)
 YunjiaDongAssignment2$s1a<-nrow(Diamonds)
 YunjiaDongAssignment2$s1b<-ncol(Diamonds)
 YunjiaDongAssignment2$s1c<-names(Diamonds)
@@ -43,7 +43,7 @@ arr1<-arr[,,1]
 arr2<-arr[,,2]
 arr3<-arr[,,3]
 YunjiaDongAssignment2$s3c<-arr2[,1]
-YunjiaDongAssignment2$s3d<-c(arr1[,2],arr2[,2],arr3[,2])
+YunjiaDongAssignment2$s3d<-c(arr1[2,2],arr2[2,2],arr3[2,2])
 YunjiaDongAssignment2$s3e<-paste(arr[1,3,3],arr[3,1,3],arr[2,2,2])
 
 
